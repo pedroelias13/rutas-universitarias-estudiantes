@@ -4,3 +4,4 @@ __pycache__/
 *.pyc
 venv/
 get-pip.py
+backend/db.sqlite3
