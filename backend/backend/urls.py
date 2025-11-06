@@ -21,7 +21,7 @@ urlpatterns = [
     path("api/docs/", SpectacularSwaggerView.as_view(url_name="schema"), name="swagger-ui"),
         # Para ViewSet
     path('api/', include('backend.rutas.urls')),
-    
+    path('api/gps/', include('gps.urls')),
 ]
 
 if settings.DEBUG:

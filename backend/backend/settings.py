@@ -198,8 +198,10 @@ CSRF_TRUSTED_ORIGINS = [
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = os.getenv("EMAIL_HOST", "smtp.gmail.com")
 EMAIL_PORT = int(os.getenv("EMAIL_PORT", "587"))
-EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER", "rdamianquintero@uniguajira.edu.co")
-EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD", "wnbfflevmkkjnnlv")
+# Do NOT keep credentials in source control. Use environment variables in deployment.
+# Defaults are empty for local development; set real values via env vars in production.
+EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER", "")
+EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD", "")
 EMAIL_USE_TLS = True
 
 DEFAULT_FROM_EMAIL = os.getenv("DEFAULT_FROM_EMAIL", EMAIL_HOST_USER)
