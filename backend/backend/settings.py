@@ -27,6 +27,7 @@ INSTALLED_APPS = [
 
     "accounts.apps.AccountsConfig",
     "gestion_cupo.apps.GestionCupoConfig",
+    "backend.rutas.apps.RutasConfig",
     "gps",
 ]
 
