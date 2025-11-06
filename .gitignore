@@ -1,0 +1,6 @@
+# Ignorados agregados por el script
+__pycache__/
+*.py[cod]
+*.pyc
+venv/
+get-pip.py
